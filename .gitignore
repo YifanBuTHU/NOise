@@ -1,0 +1,13 @@
+# Local editor and runtime state
+.vscode/
+logs/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Training outputs and generated artifacts
+**/experiments/
+*.pth
+*.pt
+*.npy
+*.npz
