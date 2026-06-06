@@ -1,0 +1,70 @@
+{
+  "formula": "PDI = sum_t(abs(network(full_svd_t)) ** 2)",
+  "display_dynamic_range_db": 45.0,
+  "full_data_root": "/data/bml/BYF/NOise_USdata/SVD_Noise_full",
+  "groups": [
+    {
+      "group": "M1",
+      "frame_count": 500,
+      "pdi": "M1_network_pdi.npy",
+      "image": "M1_network_pdi_45db.png",
+      "split": "train"
+    },
+    {
+      "group": "M2",
+      "frame_count": 500,
+      "pdi": "M2_network_pdi.npy",
+      "image": "M2_network_pdi_45db.png",
+      "split": "train"
+    },
+    {
+      "group": "R1",
+      "frame_count": 500,
+      "pdi": "R1_network_pdi.npy",
+      "image": "R1_network_pdi_45db.png",
+      "split": "train"
+    },
+    {
+      "group": "R2",
+      "frame_count": 500,
+      "pdi": "R2_network_pdi.npy",
+      "image": "R2_network_pdi_45db.png",
+      "split": "train"
+    },
+    {
+      "group": "R3",
+      "frame_count": 500,
+      "pdi": "R3_network_pdi.npy",
+      "image": "R3_network_pdi_45db.png",
+      "split": "train"
+    },
+    {
+      "group": "R4",
+      "frame_count": 500,
+      "pdi": "R4_network_pdi.npy",
+      "image": "R4_network_pdi_45db.png",
+      "split": "train"
+    },
+    {
+      "group": "R5",
+      "frame_count": 500,
+      "pdi": "R5_network_pdi.npy",
+      "image": "R5_network_pdi_45db.png",
+      "split": "train"
+    },
+    {
+      "group": "M3",
+      "frame_count": 500,
+      "pdi": "M3_network_pdi.npy",
+      "image": "M3_network_pdi_45db.png",
+      "split": "test"
+    },
+    {
+      "group": "R6",
+      "frame_count": 500,
+      "pdi": "R6_network_pdi.npy",
+      "image": "R6_network_pdi_45db.png",
+      "split": "test"
+    }
+  ]
+}
