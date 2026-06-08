@@ -1,12 +1,12 @@
 # Complex SVD Noise2Noise
 
 This folder trains a Noise2Noise U-Net on paired complex SVD frames from
-`F:\NOise_USdata\SVD_Noise`.
+`F:\NOise_data\US\svd_noise`.
 
 Default split:
 
-- train: `M1`, `M2`, `M3`, `R1`, `R2`, `R3`, `R4`, `R5`
-- test: `M4`, `R6`
+- train: `M1`, `M2`, `R1`, `R2`, `R3`, `R4`, `R5`
+- test: `M3`, `R6`
 - generalization: `P1`, `P2`, `P3`
 
 Every split uses sorted frame pairs `0000, 0010, ..., 0490`. Each 512x512 frame is
@@ -26,6 +26,19 @@ python .\denoising-SVD\train_n2n_complex.py --epochs 100 --batch-size 4 --cuda 0
 ```
 
 After training, the script exports one network PDI map for each train/test
-Mouse/Rat group under `network_pdi`. Each map uses
-`sum_t(abs(network(full_svd_t)) ** 2)` from `F:\NOise_USdata\SVD_Noise_full`
-and saves both the linear PDI `.npy` data and a 45 dB `.png` view.
+Mouse/Rat group under `experiments\complex_n2n\<run-id>\network_pdi`.
+Each map uses `sum_t(abs(network(full_svd_t)) ** 2)` from
+`F:\NOise_data\US\svd_noise_full` and saves both the linear PDI `.npy` data
+and a display `.png` view.
+
+Prepare external MRC/CARE 2D generalization data:
+
+```powershell
+python .\denoising-SVD\prepare_external_generalization_data.py
+```
+
+Export PDI maps for the prepared external generalization groups:
+
+```powershell
+python .\denoising-SVD\generate_generalization_pdi.py
+```

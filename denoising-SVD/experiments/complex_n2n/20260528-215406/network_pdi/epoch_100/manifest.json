@@ -1,7 +1,7 @@
 {
   "formula": "PDI = sum_t(abs(network(full_svd_t)) ** 2)",
   "display_dynamic_range_db": 45.0,
-  "full_data_root": "/data/bml/BYF/NOise_USdata/SVD_Noise_full",
+  "full_data_root": "F:\\NOise_data\\US\\svd_noise_full",
   "groups": [
     {
       "group": "M1",

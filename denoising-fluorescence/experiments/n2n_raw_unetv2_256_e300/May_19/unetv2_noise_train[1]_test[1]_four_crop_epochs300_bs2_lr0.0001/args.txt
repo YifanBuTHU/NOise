@@ -1,0 +1,40 @@
+{
+    "exp_name": "n2n_raw_unetv2_256_e300",
+    "exp_dir": "E:\\CodeField\\codePython\\NOise\\experiments",
+    "post": false,
+    "debug": false,
+    "net": "unetv2",
+    "data_root": "D:\\FMD",
+    "imsize": 256,
+    "in_channels": 1,
+    "out_channels": 1,
+    "transform": "four_crop",
+    "noise_levels_train": [
+        1
+    ],
+    "noise_levels_test": [
+        1
+    ],
+    "test_group": 19,
+    "captures": 50,
+    "num_workers": 0,
+    "epochs": 300,
+    "batch_size": 2,
+    "lr": 0.0001,
+    "wd": 0.0,
+    "test_batch_size": 2,
+    "seed": 1,
+    "cuda": 0,
+    "ckpt_freq": 25,
+    "print_freq": 20,
+    "log_freq": 1,
+    "plot_epochs": 25,
+    "cmap": "inferno",
+    "run_dir": "E:\\CodeField\\codePython\\NOise\\experiments/n2n_raw_unetv2_256_e300/May_19/unetv2_noise_train[1]_test[1]_four_crop_epochs300_bs2_lr0.0001",
+    "ckpt_dir": "E:\\CodeField\\codePython\\NOise\\experiments/n2n_raw_unetv2_256_e300/May_19/unetv2_noise_train[1]_test[1]_four_crop_epochs300_bs2_lr0.0001/checkpoints",
+    "train_dir": "E:\\CodeField\\codePython\\NOise\\experiments/n2n_raw_unetv2_256_e300/May_19/unetv2_noise_train[1]_test[1]_four_crop_epochs300_bs2_lr0.0001/training",
+    "pred_dir": "E:\\CodeField\\codePython\\NOise\\experiments/n2n_raw_unetv2_256_e300/May_19/unetv2_noise_train[1]_test[1]_four_crop_epochs300_bs2_lr0.0001/training/predictions",
+    "training_time": 5334.510498762131,
+    "n_params": 989712,
+    "n_layers": 18
+}

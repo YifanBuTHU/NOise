@@ -2,8 +2,11 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_DATA_ROOT = r"F:\NOise_USdata\SVD_Noise"
-DEFAULT_FULL_DATA_ROOT = r"F:\NOise_USdata\SVD_Noise_full"
+DATA_ROOT = r"F:\NOise_data"
+DEFAULT_DATA_ROOT = rf"{DATA_ROOT}\US\svd_noise"
+DEFAULT_FULL_DATA_ROOT = rf"{DATA_ROOT}\US\svd_noise_full"
+DEFAULT_GENERALIZATION_FULL_ROOT = rf"{DATA_ROOT}\prepared\svd_generalization_full"
+DEFAULT_RESULT_ROOT = rf"{DATA_ROOT}\N2N_result"
 
 
 def project_path(path):
